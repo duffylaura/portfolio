@@ -4,19 +4,19 @@
     --Nav-Background-Color: rgb(27, 21, 93); 
     --Nav-Font-Color: rgb(240, 213, 218);
     --Body-Background-Color: rgb(200, 203, 239); 
+    --Section-Border-Color: rgb(27, 21, 93);
 }
 
-/* .container {
+.container {
     padding: 20px 175px;
- } */
+ } 
 
  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--Nav-Background-Color);
-    /* margin: 10px; */
-    padding: 10px; 
+    padding: 20px;
     color: var(--Nav-Font-Color);
  }
 
@@ -40,7 +40,6 @@
     font-weight: bolder;
     color: var(--Large-Font-Color);
     background-image: url("./images/header-background/barn-wood-2.jpeg");
-    /*margin: 10px; */
     padding: 10px;
     height: 100px;
  }
@@ -57,31 +56,40 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  
-.About-Me {
-   
-} 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- section {
+section {
    margin: 10px;
    padding: 10px;
    height: 300px;
- }
- 
- article, article div {
-    padding: 10px;
-    margin: 10px 0 0 0;
- }
- 
+ } 
 
+.About-Me {
+   display: flex; 
+   flex-direction: row;
+} 
+
+.About-Me h1 {
+   flex: 1;
+   text-align: right;
+   align-self: center;
+}
+
+.About-Me p {
+   flex: 5;
+   align-self: center;
+   padding: 30px;
+}
+
+.About-Me img {
+   flex: 1;
+   padding: 10px;
+}
+ 
+.Work-Section {
+   display: flex;
+}
+ 
  footer {
    margin: 10px;
    padding: 10px;
+   background-image: url("./images/header-background/barn-wood-2.jpeg");
  }
