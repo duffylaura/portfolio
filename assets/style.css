@@ -1,0 +1,87 @@
+:root {
+    --Large-Font-Color: rgb(27, 21, 93); 
+    --Large-Font-Background: rgb(240, 213, 218);
+    --Nav-Background-Color: rgb(27, 21, 93); 
+    --Nav-Font-Color: rgb(240, 213, 218);
+    --Body-Background-Color: rgb(200, 203, 239); 
+}
+
+/* .container {
+    padding: 20px 175px;
+ } */
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Nav-Background-Color);
+    /* margin: 10px; */
+    padding: 10px; 
+    color: var(--Nav-Font-Color);
+ }
+
+ .Name-At-Top-1 {
+    margin-left: 20px;
+    background-color: var(--Large-Font-Background);
+    font-size: 30px;
+    font-weight:bolder;
+    color: var(--Large-Font-Color)
+ }
+
+ .Name-At-Top-2 {
+   margin-right: 20px;
+ }
+
+ header {
+    display: flex; 
+    justify-content: right; 
+    align-items: flex-end;
+    font-size: 20px; 
+    font-weight: bolder;
+    color: var(--Large-Font-Color);
+    background-image: url("./images/header-background/barn-wood-2.jpeg");
+    /*margin: 10px; */
+    padding: 10px;
+    height: 100px;
+ }
+
+ .Name-At-Top-3 {
+   margin-right: 20px;
+   background-color: var(--Large-Font-Background);
+ }
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: var(--Body-Background-Color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+.About-Me {
+   
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ section {
+   margin: 10px;
+   padding: 10px;
+   height: 300px;
+ }
+ 
+ article, article div {
+    padding: 10px;
+    margin: 10px 0 0 0;
+ }
+ 
+
+ footer {
+   margin: 10px;
+   padding: 10px;
+ }
