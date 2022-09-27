@@ -265,6 +265,11 @@ section {
       flex-wrap: wrap;
       flex-direction: column;
    }
+
+   .Work-Section-Middle img {
+      height: 200px;
+      width: 200px;
+   }
    
 }
  
@@ -311,6 +316,11 @@ or if I just needed one or the other */
    .Contact-Me {
       flex-wrap: wrap;
       flex-direction: column;
+   }
+   
+   .Work-Section-Middle img {
+      height: 200px;
+      width: 200px;
    }
    
 } 
