@@ -50,7 +50,7 @@
     display: flex; 
     justify-content: right; 
     align-items: flex-end;
-    font-size: 20px; 
+    font-size: var(--Large-Font-Size);
     font-weight: bolder;
     color: var(--Large-Font-Color);
     background-image: url("./images/header-background/barn-wood-2.jpeg");
