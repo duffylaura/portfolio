@@ -11,6 +11,10 @@
     --Photo-Link-Background: #FC9B28;
 }
 
+*{
+   box-sizing:border-box;
+}
+
 .container {
     padding: 20px 175px;
  } 
@@ -96,17 +100,17 @@ section {
 .About-Me figure {
    flex: 1;
    align-self: center;
+   justify-self: center;
 }
 
 .About-Me figure img {
    height: 175px;
    width: 150px;
-   padding: 20px;
 }
  
 .Work-Section {
    display: flex;
-   flex-flow: row nowrap;
+   flex-direction: row;
    height: 400px;
 }
 
@@ -154,9 +158,8 @@ section {
 
 
 .Image-Row {
-   box-sizing:border-box;
    display: flex;
-   flex-flow: row nowrap;
+   flex-direction: row;
    justify-content: space-between;
    height: 200px;
 }
@@ -195,7 +198,7 @@ section {
 .Contact-Me h1 {
    flex: 1;
    text-align: right;
-   align-self: flex-start;
+   align-self: center;
    padding: 20px;
    font-size: var(--Large-Font-Size);
    font-weight: var(--Large-Font-Weight);
@@ -216,3 +219,98 @@ section {
    padding: 10px;
    height: 50px;
  }
+
+@media screen and (max-width: 992px) {
+   body {
+     flex-wrap: wrap;
+   }
+ }
+ 
+ @media screen and (max-width: 768px) {
+   body { 
+      flex-wrap: wrap;
+   }
+
+   header .span {
+      overflow-wrap: break-word;
+      background-size: cover;
+   }
+
+   .About-Me {
+      flex-wrap: wrap;
+      flex-direction: column;
+   } 
+
+   .About-Me p {
+      overflow-wrap: break-word;
+      background-size: cover;
+   }
+
+   .Images-Caption {
+      overflow-wrap: break-word;
+      background-size: cover;
+   }
+   
+   .Work-Section {
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+   
+   .Image-Row {
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+
+   .Contact-Me {
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+   
+}
+ 
+ @media screen and (max-width: 576px) {
+
+/*This is the same code as above just copied here for smaller phones;
+wasn't sure if I should have these three sections (large tablet, large phone, smaller phone), 
+or if I just needed one or the other */
+
+   body { 
+      flex-wrap: wrap;
+   }
+
+   header .span {
+      overflow-wrap: break-word;
+      background-size: cover;
+   }
+
+   .About-Me {
+      flex-wrap: wrap;
+      flex-direction: column;
+   } 
+
+   .About-Me p {
+      overflow-wrap: break-word;
+      background-size: cover;
+   }
+
+   .Images-Caption {
+      overflow-wrap: break-word;
+      background-size: cover;
+   }
+   
+   .Work-Section {
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+   
+   .Image-Row {
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+
+   .Contact-Me {
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+   
+} 
