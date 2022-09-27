@@ -1,5 +1,7 @@
 :root {
     --Large-Font-Color: rgb(27, 21, 93); 
+    --Large-Font-Size: 30px;
+    --Large-Font-Weight: bolder;
     --Large-Font-Background: rgb(240, 213, 218);
     --Nav-Background-Color: rgb(27, 21, 93); 
     --Nav-Font-Color: rgb(240, 213, 218);
@@ -23,9 +25,9 @@
  .Name-At-Top-1 {
     margin-left: 20px;
     background-color: var(--Large-Font-Background);
-    font-size: 30px;
-    font-weight:bolder;
-    color: var(--Large-Font-Color)
+    font-size: var(--Large-Font-Size);
+    font-weight: var(--Large-Font-Weight);
+    color: var(--Large-Font-Color);
  }
 
  .Name-At-Top-2 {
@@ -50,8 +52,6 @@
  }
 
 body {
-    margin: 0;
-    height: 100vh;
     background-color: var(--Body-Background-Color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
@@ -59,35 +59,93 @@ body {
 section {
    margin: 10px;
    padding: 10px;
-   height: 300px;
  } 
 
 .About-Me {
    display: flex; 
    flex-direction: row;
+   height: 200px;
 } 
 
 .About-Me h1 {
    flex: 1;
    text-align: right;
-   align-self: center;
+   align-self: flex-start;
+   padding: 10px;
+   font-size: var(--Large-Font-Size);
+   font-weight: var(--Large-Font-Weight);
+   color: var(--Large-Font-Color);
 }
 
 .About-Me p {
-   flex: 5;
-   align-self: center;
-   padding: 30px;
+   flex: 4;
+   align-self: flex-start;
+   padding: 10px;
 }
 
-.About-Me img {
+.About-Me figure {
    flex: 1;
+   align-self: center;
+}
+
+.About-Me figure img {
+   height: 175px;
+   width: 150px;
    padding: 10px;
 }
  
 .Work-Section {
    display: flex;
+   flex-direction: row;
+   height: 400px;
+}
+
+.Work-Section h1 {
+   flex: 1;
+   text-align: right;
+   align-self: flex-start;
+   padding: 10px;
+   font-size: var(--Large-Font-Size);
+   font-weight: var(--Large-Font-Weight);
+   color: var(--Large-Font-Color);
 }
  
+.Work-Section img {
+   display: flex;
+   flex: 4;
+   align-self: flex-start;
+   padding: 10px;
+   height: 100%;
+   width: 100%;
+}
+
+.Image-Row {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 200px;
+}
+
+.Image-Row h1 {
+   flex: 1;
+   text-align: right;
+   align-self: flex-start;
+   padding: 10px;
+}
+
+.Image-Row img {
+   flex: 2;
+   padding: 10px;
+   height: 100%;
+   width: 100%;
+}
+
+
+
+
+
+
+/*
  footer {
    margin: 10px;
    padding: 10px;
