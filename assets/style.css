@@ -7,6 +7,8 @@
     --Nav-Font-Color: #FC9B28;
     --Body-Background-Color: rgb(200, 203, 239); 
     --Small-Font-Color:  #29394B; 
+    --Photo-Link-Font-Color: #29394B;
+    --Photo-Link-Background: #FC9B28;
 }
 
 .container {
@@ -51,9 +53,11 @@
    background-color: var(--Large-Font-Background);
  }
 
-body {
-    background-color: var(--Body-Background-Color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body { 
+   background-color: var(--Body-Background-Color);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: flex;
+   flex-direction: column;
  }
  
 section {
@@ -96,7 +100,7 @@ section {
  
 .Work-Section {
    display: flex;
-   flex-direction: row;
+   flex-flow: row nowrap;
    height: 400px;
 }
 
@@ -109,18 +113,44 @@ section {
    font-weight: var(--Large-Font-Weight);
    color: var(--Large-Font-Color);
 }
- 
-.Work-Section img {
+
+.Work-Section-Middle {
    display: flex;
    flex: 4;
-   align-self: flex-start;
-   height: 100%;
-   width: 100%;
 }
 
+.Work-Section-Middle img {
+   height: 100%;
+   width: 100%;
+   transition: -webkit-transform .5s ease-in-out; 
+   transition: transform .5s ease-in-out;
+}
+
+.Work-Section-Middle img:hover {
+   -webkit-transform: scale(1.07);
+   transform: scale (1.07);
+}
+
+.Images-Caption {
+   position: absolute; 
+   margin: 0;
+   word-break: break-word; 
+   font-size: 1.25rem; 
+   font-weight: bolder;
+   background-color: var(--Photo-Link-Background);
+   color: var(--Photo-Link-Font-Color);
+}
+
+.Caption-Position {
+   justify-self: flex-start;
+   align-self: flex-end;
+}
+
+
 .Image-Row {
+   box-sizing:border-box;
    display: flex;
-   flex-direction: row;
+   flex-flow: row nowrap;
    justify-content: space-between;
    height: 200px;
 }
@@ -132,39 +162,47 @@ section {
    padding: 20px;
 }
 
-.Image-Row img {
+.Smaller-Images {
+   display: flex;
    flex: 2;
-   height: 100%;
-   width: 100%;
+}
+
+.Smaller-Images img {
+   height: 200px;
+   width: 300px;
+   transition: -webkit-transform .5s ease-in-out; 
+   transition: transform .5s ease-in-out;
+}
+
+.Smaller-Images img:hover {
+   -webkit-transform: scale(1.07);
+   transform: scale (1.07);
 }
 
 .Contact-Me {
    display: flex;
    flex-direction: row;
    height: 100px; 
-   margin: 20px;
+   margin-top: 100px;
 }
 
 .Contact-Me h1 {
    flex: 1;
    text-align: right;
-   align-self: center;
+   align-self: flex-start;
    padding: 20px;
    font-size: var(--Large-Font-Size);
    font-weight: var(--Large-Font-Weight);
    color: var(--Large-Font-Color);
 }
 
-.Contact-Links {
-   flex: 4; 
-   text-align: center;
+.Contact-Me a {
+   display: flex;
+   flex: 1;
+   justify-content: center;
    align-items: center;
-   padding: 20px;
-}
-
-.Contact-Links a {
    color: var(--Small-Font-Color);
-   font-weight: bolder; 
+   font-weight: bolder;
 }
 
  footer {
