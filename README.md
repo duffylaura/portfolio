@@ -16,13 +16,13 @@ To use, enter the following URL into any browser: https://duffylaura.github.io/p
 
 The following UI should appear: 
 
-![Alt text] (/assets/images/UI-Screenshots/UI-1.png?raw=true "Screenshot #1")
+<img src= "./assets/images/UI-Screenshots/UI-1.png" alt= "Screenshot #1" >
 
-![Alt text] (/assets/images/UI-Screenshots/UI-2.png?raw=true "Screenshot #2")
+<img src= "./assets/images/UI-Screenshots/UI-2.png" alt= "Screenshot #2" >
 
-![Alt text] (/assets/images/UI-Screenshots/UI-3.png?raw=true "Screenshot #3")
+<img src= "./assets/images/UI-Screenshots/UI-3.png" alt= "Screenshot #3" >
 
-![Alt text] (/assets/images/UI-Screenshots/UI-4.png?raw=true "Screenshot #4")
+<img src= "./assets/images/UI-Screenshots/UI-4.png" alt= "Screenshot #4" >
 
 The User can you use the nav bar to naviate to different parts of the application or they scroll down. 
 
