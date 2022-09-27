@@ -1,12 +1,12 @@
 :root {
-    --Large-Font-Color: rgb(27, 21, 93); 
+    --Large-Font-Color: #29394B;  
     --Large-Font-Size: 30px;
     --Large-Font-Weight: bolder;
-    --Large-Font-Background: rgb(240, 213, 218);
-    --Nav-Background-Color: rgb(27, 21, 93); 
-    --Nav-Font-Color: rgb(240, 213, 218);
+    --Large-Font-Background: #FC9B28;
+    --Nav-Background-Color:  #29394B; 
+    --Nav-Font-Color: #FC9B28;
     --Body-Background-Color: rgb(200, 203, 239); 
-    --Section-Border-Color: rgb(27, 21, 93);
+    --Small-Font-Color:  #29394B; 
 }
 
 .container {
@@ -71,7 +71,7 @@ section {
    flex: 1;
    text-align: right;
    align-self: flex-start;
-   padding: 10px;
+   padding: 20px;
    font-size: var(--Large-Font-Size);
    font-weight: var(--Large-Font-Weight);
    color: var(--Large-Font-Color);
@@ -80,7 +80,7 @@ section {
 .About-Me p {
    flex: 4;
    align-self: flex-start;
-   padding: 10px;
+   color: var(--Small-Font-Color)
 }
 
 .About-Me figure {
@@ -91,7 +91,7 @@ section {
 .About-Me figure img {
    height: 175px;
    width: 150px;
-   padding: 10px;
+   padding: 20px;
 }
  
 .Work-Section {
@@ -104,7 +104,7 @@ section {
    flex: 1;
    text-align: right;
    align-self: flex-start;
-   padding: 10px;
+   padding: 20px;
    font-size: var(--Large-Font-Size);
    font-weight: var(--Large-Font-Weight);
    color: var(--Large-Font-Color);
@@ -114,7 +114,6 @@ section {
    display: flex;
    flex: 4;
    align-self: flex-start;
-   padding: 10px;
    height: 100%;
    width: 100%;
 }
@@ -130,24 +129,46 @@ section {
    flex: 1;
    text-align: right;
    align-self: flex-start;
-   padding: 10px;
+   padding: 20px;
 }
 
 .Image-Row img {
    flex: 2;
-   padding: 10px;
    height: 100%;
    width: 100%;
 }
 
+.Contact-Me {
+   display: flex;
+   flex-direction: row;
+   height: 100px; 
+   margin: 20px;
+}
 
+.Contact-Me h1 {
+   flex: 1;
+   text-align: right;
+   align-self: center;
+   padding: 20px;
+   font-size: var(--Large-Font-Size);
+   font-weight: var(--Large-Font-Weight);
+   color: var(--Large-Font-Color);
+}
 
+.Contact-Links {
+   flex: 4; 
+   text-align: center;
+   align-items: center;
+   padding: 20px;
+}
 
+.Contact-Links a {
+   color: var(--Small-Font-Color);
+   font-weight: bolder; 
+}
 
-
-/*
  footer {
-   margin: 10px;
-   padding: 10px;
    background-image: url("./images/header-background/barn-wood-2.jpeg");
+   padding: 10px;
+   height: 50px;
  }
