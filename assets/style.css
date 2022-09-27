@@ -36,6 +36,12 @@
    margin-right: 20px;
  }
 
+ .Name-At-Top-2 a {
+   text-decoration: none;
+   color: var(--Nav-Font-Color);
+   font-weight: bolder;
+ }
+
  header {
     display: flex; 
     justify-content: right; 
